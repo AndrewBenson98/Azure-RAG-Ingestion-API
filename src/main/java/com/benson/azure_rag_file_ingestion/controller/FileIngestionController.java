@@ -16,7 +16,7 @@ public class FileIngestionController {
 
     private final String VALID_API_KEY;
 
-    public FileIngestionController(@Autowired FileIngestionService fileIngestionService, @Value("${api.key}") String VALID_API_KEY) {
+    public FileIngestionController(@Autowired FileIngestionService fileIngestionService, @Value("${api_key}") String VALID_API_KEY) {
         this.fileIngestionService = fileIngestionService;
         this.VALID_API_KEY= VALID_API_KEY;
     }
