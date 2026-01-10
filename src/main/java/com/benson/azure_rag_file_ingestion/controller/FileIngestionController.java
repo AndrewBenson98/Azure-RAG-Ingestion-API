@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/api/ingest")
+@CrossOrigin(origins = "*")
 public class FileIngestionController {
 
     private final FileIngestionService fileIngestionService;
